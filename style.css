@@ -39,8 +39,10 @@ body{
 .btn-div{
     margin: 2em 0;
     display: flex;
+    align-items: center;
     width: 100%;
     justify-content: left;
+    gap: 2em;
 }
 .btn-div button{
     padding: 0.8em 1.1em;
@@ -50,6 +52,17 @@ body{
     font-weight: bolder;
     border: none;
     border-radius: 1em;
+}
+.select{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: inherit;
+}
+.label{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .btn-div button:hover{
     cursor: pointer;
