@@ -42,7 +42,7 @@ function all(){
 }
 
 function showCopiedMessage() {
-    copiedMessageEl.textContent = "Copiado Exitosamente"
+    copiedMessageEl.textContent = "Copied Successfully"
     setTimeout(() => {
         copiedMessageEl.textContent = ""
     }, 2000)
