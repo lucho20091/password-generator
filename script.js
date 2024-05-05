@@ -12,6 +12,7 @@ let password2 = []
 const passwordEl1 = document.querySelector("#password1")
 const passwordEl2 = document.querySelector("#password2")
 const displayall = document.querySelector(".displayall")
+const copiedMessageEl = document.querySelector("#copiedMessage")
 
 
 btnEl.addEventListener("click", () => {
@@ -32,10 +33,36 @@ btnEl.addEventListener("click", () => {
 })
 
 function display() {
-        passwordEl1.textContent = password1.join("")
-        passwordEl2.textContent = password2.join("")
+        passwordEl1.innerHTML = `<i class="fa-regular fa-copy"></i>` + " " + password1.join("")
+        passwordEl2.innerHTML = `<i class="fa-regular fa-copy"></i>` + " " + password2.join("")
 }
 
 function all(){
     displayall.textContent = characters
 }
+
+function showCopiedMessage() {
+    copiedMessageEl.style.display = "block"
+    setTimeout(() => {
+        copiedMessageEl.style.display = "none"
+    }, 2000)
+}
+
+passwordEl1.addEventListener("click", async () => {
+    try {
+        await navigator.clipboard.writeText(passwordEl1.textContent)
+        showCopiedMessage()
+    } catch (e) {
+        console.log(e)
+    }
+})
+
+passwordEl2.addEventListener("click", async () => {
+    try {
+        await navigator.clipboard.writeText(passwordEl2.textContent)
+        showCopiedMessage()
+    } catch (e) {
+        console.log(e)
+    }
+})
+
