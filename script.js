@@ -50,6 +50,7 @@ function showCopiedMessage() {
 
 passwordEl1.addEventListener("click", async () => {
     try {
+        copiedMessageEl.textContent = ""
         await navigator.clipboard.writeText(passwordEl1.textContent)
         showCopiedMessage()
     } catch (e) {
@@ -59,6 +60,7 @@ passwordEl1.addEventListener("click", async () => {
 
 passwordEl2.addEventListener("click", async () => {
     try {
+        copiedMessageEl.textContent = ""
         await navigator.clipboard.writeText(passwordEl2.textContent)
         showCopiedMessage()
     } catch (e) {
