@@ -13,9 +13,12 @@ const passwordEl1 = document.querySelector("#password1")
 const passwordEl2 = document.querySelector("#password2")
 const displayall = document.querySelector(".displayall")
 
+
 btnEl.addEventListener("click", () => {
     password1 = []
     password2 = []
+    passwordEl1.classList.add("password")
+    passwordEl2.classList.add("password")
     for (let i = 0; i < 15; i++){
         let random = Math.floor(Math.random() * 95)
         let random2 = Math.floor(Math.random() * 95)
