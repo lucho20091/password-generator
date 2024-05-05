@@ -99,11 +99,15 @@ body{
     background: #5FDD9D;
 }
 @media (max-width: 700px){
+    .main{
+        align-items:baseline;
+    }
     .container{
         height: 30em;
     }
     .text h1{
-        font-size: 1.8em;
+        font-size: 2.2em;
+        margin-top: 2em;
     }
     .btn-div button{
         font-size: 1em;
@@ -111,7 +115,16 @@ body{
     .text h2{
         font-size: 1.4em;
     }
+    .generated{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2em;
+    }
+    .generated p {
+        margin: 0;
+    }
     .password{
-        font-size: 0.8em;
+        font-size: 1.2em;
     }
 }
