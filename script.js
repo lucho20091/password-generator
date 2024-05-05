@@ -42,9 +42,9 @@ function all(){
 }
 
 function showCopiedMessage() {
-    copiedMessageEl.style.display = "block"
+    copiedMessageEl.textContent = "Copiado Exitosamente"
     setTimeout(() => {
-        copiedMessageEl.style.display = "none"
+        copiedMessageEl.textContent = ""
     }, 2000)
 }
 
