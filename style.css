@@ -133,7 +133,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 2em;
+        margin: 2em 0;
     }
     .generated p {
         margin: 0;
