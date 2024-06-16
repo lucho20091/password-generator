@@ -19,22 +19,14 @@
                         <h2>Never use an insecure password again</h2>
                     </div>
                     <div class="btn-div">
-                        <button id="btn-generate">Generate Passwords</button>
-                        <div>
-                            <select name="select" class="select" id="select-value">
-                                <option value="10" selected>10</option>
-                                <option value="15" >15</option>
-                                <option value="20">20</option>
-                              </select>
-                              <label for="select" class="label">Characters</label>
-                        </div>
+                        <button id="btn-generate" onclick="generate()">Generate Passwords</button>
                         </div>
                 </div>
                 <div class="divider"></div>
                 <div class="block">
-                    <div class="generated">
-                        <p id="password1"></p>
-                        <p id="password2"></p>
+                    <div class="generated" id="generated">
+                        <!-- <p id="password1" onclick="copyText(event)"></p>
+                        <p id="password2" onclick="copyText(event)"></p> -->
                     </div>
                 </div>
                 <div class="block2">

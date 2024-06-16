@@ -1,3 +1,6 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
 }
@@ -17,7 +20,7 @@ body{
     width: 40em;
     height: 35em;
     border: 1px solid black;
-    background: #8377D1;
+    background: #222222;
 }
 .center{
     width: 85%;
@@ -58,6 +61,7 @@ body{
     font-weight: bold;
     font-family: inherit;
     border-radius: 40%;
+    background: #CBF3F0;
 }
 .label{
     color: white;
@@ -117,7 +121,7 @@ body{
         align-items:baseline;
     }
     .container{
-        height: 50em;
+        height: 100%;
         justify-content: start;
     }
     .text h1{
