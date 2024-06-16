@@ -11,7 +11,6 @@ const generatedElem = document.getElementById("generated");
 
 function generate(){
     generatedElem.innerHTML = renderingHtml(createRandom(), createRandom());
-    console.log(generatedElem.innerHTML)
 }
 
 function createRandom(){
@@ -33,13 +32,11 @@ function copyText(event){
 }
 
 function renderingHtml(...string){
-    console.log(string)
     let html = ''
     for (let i = 0; i < 2; i++){
         html += `<p class="password" onclick="copyText(event)">
         <i class="fa-regular fa-copy"></i> ${escapeHTML(string[i])}</p>`
     }
-    console.log(html)
     return html
 }
 
